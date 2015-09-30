@@ -14,6 +14,9 @@
 		FA2A5AAB1BAE664B0016A0E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2A5AA91BAE664B0016A0E3 /* LaunchScreen.storyboard */; };
 		FA2A5AB61BAE664B0016A0E3 /* LunaBlockerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A5AB51BAE664B0016A0E3 /* LunaBlockerTests.swift */; };
 		FA2A5AC11BAE664B0016A0E3 /* LunaBlockerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A5AC01BAE664B0016A0E3 /* LunaBlockerUITests.swift */; };
+		FAFEA2B11BAE6D8000E6AFBC /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = FAFEA2B01BAE6D8000E6AFBC /* blockerList.json */; };
+		FAFEA2B31BAE6D8000E6AFBC /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFEA2B21BAE6D8000E6AFBC /* ActionRequestHandler.swift */; };
+		FAFEA2B71BAE6D8000E6AFBC /* ContentBlocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FAFEA2AE1BAE6D8000E6AFBC /* ContentBlocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +34,28 @@
 			remoteGlobalIDString = FA2A5A9C1BAE664B0016A0E3;
 			remoteInfo = LunaBlocker;
 		};
+		FAFEA2B51BAE6D8000E6AFBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA2A5A951BAE664B0016A0E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAFEA2AD1BAE6D8000E6AFBC;
+			remoteInfo = ContentBlocker;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAFEA2BB1BAE6D8000E6AFBC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FAFEA2B71BAE6D8000E6AFBC /* ContentBlocker.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA2A5A9D1BAE664B0016A0E3 /* LunaBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunaBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +71,10 @@
 		FA2A5ABC1BAE664B0016A0E3 /* LunaBlockerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunaBlockerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2A5AC01BAE664B0016A0E3 /* LunaBlockerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunaBlockerUITests.swift; sourceTree = "<group>"; };
 		FA2A5AC21BAE664B0016A0E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFEA2AE1BAE6D8000E6AFBC /* ContentBlocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ContentBlocker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFEA2B01BAE6D8000E6AFBC /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		FAFEA2B21BAE6D8000E6AFBC /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
+		FAFEA2B41BAE6D8000E6AFBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +99,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAFEA2AB1BAE6D8000E6AFBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +115,7 @@
 				FA2A5A9F1BAE664B0016A0E3 /* LunaBlocker */,
 				FA2A5AB41BAE664B0016A0E3 /* LunaBlockerTests */,
 				FA2A5ABF1BAE664B0016A0E3 /* LunaBlockerUITests */,
+				FAFEA2AF1BAE6D8000E6AFBC /* ContentBlocker */,
 				FA2A5A9E1BAE664B0016A0E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +126,7 @@
 				FA2A5A9D1BAE664B0016A0E3 /* LunaBlocker.app */,
 				FA2A5AB11BAE664B0016A0E3 /* LunaBlockerTests.xctest */,
 				FA2A5ABC1BAE664B0016A0E3 /* LunaBlockerUITests.xctest */,
+				FAFEA2AE1BAE6D8000E6AFBC /* ContentBlocker.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +162,16 @@
 			path = LunaBlockerUITests;
 			sourceTree = "<group>";
 		};
+		FAFEA2AF1BAE6D8000E6AFBC /* ContentBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				FAFEA2B01BAE6D8000E6AFBC /* blockerList.json */,
+				FAFEA2B21BAE6D8000E6AFBC /* ActionRequestHandler.swift */,
+				FAFEA2B41BAE6D8000E6AFBC /* Info.plist */,
+			);
+			path = ContentBlocker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +182,12 @@
 				FA2A5A991BAE664B0016A0E3 /* Sources */,
 				FA2A5A9A1BAE664B0016A0E3 /* Frameworks */,
 				FA2A5A9B1BAE664B0016A0E3 /* Resources */,
+				FAFEA2BB1BAE6D8000E6AFBC /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FAFEA2B61BAE6D8000E6AFBC /* PBXTargetDependency */,
 			);
 			name = LunaBlocker;
 			productName = LunaBlocker;
@@ -181,6 +230,23 @@
 			productReference = FA2A5ABC1BAE664B0016A0E3 /* LunaBlockerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		FAFEA2AD1BAE6D8000E6AFBC /* ContentBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFEA2BA1BAE6D8000E6AFBC /* Build configuration list for PBXNativeTarget "ContentBlocker" */;
+			buildPhases = (
+				FAFEA2AA1BAE6D8000E6AFBC /* Sources */,
+				FAFEA2AB1BAE6D8000E6AFBC /* Frameworks */,
+				FAFEA2AC1BAE6D8000E6AFBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContentBlocker;
+			productName = ContentBlocker;
+			productReference = FAFEA2AE1BAE6D8000E6AFBC /* ContentBlocker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,6 +267,9 @@
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = FA2A5A9C1BAE664B0016A0E3;
 					};
+					FAFEA2AD1BAE6D8000E6AFBC = {
+						CreatedOnToolsVersion = 7.0;
+					};
 				};
 			};
 			buildConfigurationList = FA2A5A981BAE664B0016A0E3 /* Build configuration list for PBXProject "LunaBlocker" */;
@@ -219,6 +288,7 @@
 				FA2A5A9C1BAE664B0016A0E3 /* LunaBlocker */,
 				FA2A5AB01BAE664B0016A0E3 /* LunaBlockerTests */,
 				FA2A5ABB1BAE664B0016A0E3 /* LunaBlockerUITests */,
+				FAFEA2AD1BAE6D8000E6AFBC /* ContentBlocker */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +315,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFEA2AC1BAE6D8000E6AFBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFEA2B11BAE6D8000E6AFBC /* blockerList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +354,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FAFEA2AA1BAE6D8000E6AFBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFEA2B31BAE6D8000E6AFBC /* ActionRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,6 +374,11 @@
 			isa = PBXTargetDependency;
 			target = FA2A5A9C1BAE664B0016A0E3 /* LunaBlocker */;
 			targetProxy = FA2A5ABD1BAE664B0016A0E3 /* PBXContainerItemProxy */;
+		};
+		FAFEA2B61BAE6D8000E6AFBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAFEA2AD1BAE6D8000E6AFBC /* ContentBlocker */;
+			targetProxy = FAFEA2B51BAE6D8000E6AFBC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -398,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = LunaBlocker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexli.LunaBlocker;
@@ -409,6 +501,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = LunaBlocker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexli.LunaBlocker;
@@ -464,6 +557,30 @@
 			};
 			name = Release;
 		};
+		FAFEA2B81BAE6D8000E6AFBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				INFOPLIST_FILE = ContentBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexli.LunaBlocker.ContentBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FAFEA2B91BAE6D8000E6AFBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				INFOPLIST_FILE = ContentBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexli.LunaBlocker.ContentBlocker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -483,6 +600,7 @@
 				FA2A5AC71BAE664B0016A0E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA2A5AC81BAE664B0016A0E3 /* Build configuration list for PBXNativeTarget "LunaBlockerTests" */ = {
 			isa = XCConfigurationList;
@@ -491,12 +609,22 @@
 				FA2A5ACA1BAE664B0016A0E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA2A5ACB1BAE664B0016A0E3 /* Build configuration list for PBXNativeTarget "LunaBlockerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA2A5ACC1BAE664B0016A0E3 /* Debug */,
 				FA2A5ACD1BAE664B0016A0E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFEA2BA1BAE6D8000E6AFBC /* Build configuration list for PBXNativeTarget "ContentBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFEA2B81BAE6D8000E6AFBC /* Debug */,
+				FAFEA2B91BAE6D8000E6AFBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

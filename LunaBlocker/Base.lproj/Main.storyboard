@@ -1,25 +1,85 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9052" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Activate-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LunaBlocker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps to activate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bW2-fm-iQg">
+                                <rect key="frame" x="123" y="28" width="128.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go to Safari -&gt; Content Blockers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSQ-hi-6fv">
+                                <rect key="frame" x="16" y="126" width="240.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable Luna Blocker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bx6-35-8om">
+                                <rect key="frame" x="16" y="166.5" width="151" height="20.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzg-Jx-ppC">
+                                <rect key="frame" x="16" y="73" width="168" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Open the Settings App"/>
+                                <connections>
+                                    <action selector="openSettingsApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Tr-dF-XSo"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKZ-Ox-hlf">
+                                <rect key="frame" x="161" y="318" width="53" height="30"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wWa-9V-MWt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyK-ET-aYw">
+                                <rect key="frame" x="112" y="356" width="150" height="30"/>
+                                <state key="normal" title="Test at Engadget.com"/>
+                                <connections>
+                                    <action selector="testButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wc4-tt-NVF"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gyK-ET-aYw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5hN-8k-LLV"/>
+                            <constraint firstItem="cKZ-Ox-hlf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DGd-m1-HJE"/>
+                            <constraint firstItem="bx6-35-8om" firstAttribute="top" secondItem="GSQ-hi-6fv" secondAttribute="bottom" constant="20" id="I07-Fb-enU"/>
+                            <constraint firstItem="bx6-35-8om" firstAttribute="leading" secondItem="GSQ-hi-6fv" secondAttribute="leading" id="PlX-G0-XSa"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="kzg-Jx-ppC" secondAttribute="leading" id="aPY-dE-SIp"/>
+                            <constraint firstItem="cKZ-Ox-hlf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jwL-Yn-Ict"/>
+                            <constraint firstItem="GSQ-hi-6fv" firstAttribute="top" secondItem="kzg-Jx-ppC" secondAttribute="bottom" constant="20" id="kOX-Yy-3tD"/>
+                            <constraint firstItem="bW2-fm-iQg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="lDM-rQ-nIS"/>
+                            <constraint firstItem="kzg-Jx-ppC" firstAttribute="top" secondItem="bW2-fm-iQg" secondAttribute="bottom" constant="24.5" id="mjR-iv-Koz"/>
+                            <constraint firstItem="GSQ-hi-6fv" firstAttribute="leading" secondItem="kzg-Jx-ppC" secondAttribute="leading" id="suf-jy-XzL"/>
+                            <constraint firstItem="gyK-ET-aYw" firstAttribute="top" secondItem="cKZ-Ox-hlf" secondAttribute="bottom" constant="8" id="vHu-YG-bzA"/>
+                            <constraint firstItem="bW2-fm-iQg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y34-Y9-Ila"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Activate" id="fSh-vP-yNf"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="753" y="342"/>
         </scene>
     </scenes>
 </document>
